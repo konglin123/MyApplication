@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorWhite">#fff</color>
+    <color name="colorGray">#ccc</color>
+    <color name="colorDeepGray">#999</color>
+    <color name="colorEasyGray">#f2f2f2</color>
+    <color name="colorRed">#f53134</color>
+    <color name="colorBlue">#3895e0</color>
+
+    <color name="titleBg">#006F6B</color>
+    <color name="accessorySelectedBg">#50baab</color>
+    <color name="picLevelBg">#f3f3f4</color>
+
+    <color name="deleteBtBgNormal">#ff4a57</color>
+    <color name="deleteBtBgPressed">#f22e3b</color>
+
+    <color name="blue">#0383EE</color>
+
+    <color name="colorPrimaryDarkTrans">#CC3F51B5</color>
+    <color name="black_dark">#333333</color>
+
+    <color name="black_middle">#666666</color>
+</resources>

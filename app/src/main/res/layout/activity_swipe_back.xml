@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch.Vertical"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testSwipeBack"
+            android:id="@+id/swipeBack"
+            android:text="测试滑动返回" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testSwipeDelete"
+            android:id="@+id/swipeDelete"
+            android:text="测试滑动删除" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testTranslucent"
+            android:id="@+id/translucent"
+            android:text="TestTranslucent" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testPullRefreshAndWebView"
+            android:id="@+id/prAndWv"
+            android:text="测试下拉刷新和 WebView" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testRecyclerView"
+            android:id="@+id/rv"
+            android:text="测试 RecyclerView" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testEditText"
+            android:id="@+id/et"
+            android:text="测试 EditText 位于底部的情况" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testNavigationBarOverlap"
+            android:id="@+id/nbOverlap"
+            android:text="测试底部导航条是否悬浮在内容上" />
+    </LinearLayout>
+</LinearLayout>

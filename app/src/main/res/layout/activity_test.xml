@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.TestActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/MatchWrap"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:tabIndicatorColor="#aaaa55"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#cccccc"
+            app:tabTextColor="@android:color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            style="@style/MatchMatch.Vertical"
+            android:gravity="center_horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/swipeBackEnableSwitch"
+                style="@style/WrapWrap"
+                android:checked="true"
+                android:padding="@dimen/size_level3"
+                android:text="滑动返回可用"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/onlyTrackingLeftEdgeSwitch"
+                style="@style/WrapWrap"
+                android:checked="true"
+                android:padding="@dimen/size_level3"
+                android:text="仅仅跟踪左侧边缘的滑动返回" />
+
+            <EditText
+                style="@style/MatchWrap"
+                android:layout_margin="@dimen/size_level1"
+                android:gravity="center"
+                android:hint="测试滑动返回时自动关闭软键盘"
+                android:singleLine="true"
+                android:text="测试滑动返回时自动关闭软键盘"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
